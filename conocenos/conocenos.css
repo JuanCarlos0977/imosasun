@@ -94,6 +94,9 @@ footer div a {
     color:aliceblue
 }
 
+.inicio {
+    text-align: center;
+}
 
 
 @media (max-width: 750px) {
