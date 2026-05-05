@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #428f83;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: grid;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+header {
+    background-color: #297377;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(191, 17, 17, 0.2);
+}
+
+.logo_salud a {
+    display: block;
+    text-decoration: none;
+}
+
+.logo_salud {
+    font-weight: bold;
+    color: #0e0e0e;
+}
+
+.logo_salud img {
+    height: 22px;
+    transform: scale(2);
+    transform-origin: left center;
+    display: block ;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    line-height: 1;
+    display: inline-block;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+nav a.active {
+    background: rgba(255,255,255,0.2);
+    font-weight: bold;
+}
+
+footer {
+    background-color: #297377;
+    color: #fff;
+    text-align: center;
+    padding: 2px 1px;
+    font-size: 18px;
+    display:flow-root;
+}
+
+footer div a {
+    color:aliceblue
+}
+
+
+
+@media (max-width: 750px) {
+    div {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+
+    .inicio{
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .inicio-descripcion {
+        text-align: center;
+    }
+
+    .inicio-img {
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        width: 100%;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .inicio {
+        padding: 60px 20px;
+        min-height: 50vh;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 8px 16px;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .logo_salud img {
+        transform: scale(3.2);
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    footer {
+        padding: 32px 16px;
+    }
+
+    .inicio{
+        padding: 50px 20px;
+    }
+}
