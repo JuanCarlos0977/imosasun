@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imosasun - Login</title>
+    <link rel="stylesheet" href="ilogin.css">
+    <meta name="descripcion" content="tu web de salud">
+    <link rel="icon" href="/img/logo_salud.png" type="img/png">
+
+
+</head>
+
+
+<body>
+
+    <header>
+            <div class="logo_salud"><a href="/index.html"><img src="/img/logo_salud.png" alt="Imosasun" /></a></div>
+            <nav>
+      
+                <ul>
+                    <li><a href="../conocenos/conocenos.html">Conocenos</a></li>
+                    <li><a href="../funcionamiento/funcionamiento.html">Funcionamiento</a></li>
+                    <li><a href="../icontacto/icontacto.html">Contacto</a></li>
+        
+                </ul>
+            </nav>
+            <div id="fechaDia"></div>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="inicio-inicio">
+                <h1>I M OSASUN</h1>
+                 <p class="inicio-bienvenida">Bienvenido a I M Osasun, donde tu salud puede mejorar.</p>
+                <div class="inicio-contacto">
+                    <h2 style="text-align: center;">LOGIN</h2>
+                </div>
+
+                <div>
+                    <form class="form-contacto" action="informacion.html" method="GET">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required placeholder="Email" />
+                        <br>
+                        <label for="password">Contraseña:</label>
+                        <input type="password" id="password" name="password" required placeholder="Contraseña" />
+                        <br>
+                        <br>
+                        <input type="checkbox" id="acepto" name="acepto" required>
+                        <label for="acepto">Acepto las condiciones generales de la web</label><br><br>
+
+                        <button type="submit">Iniciar Sesión</button>
+                    </form>
+                </div>
+
+
+                <div class="inicio_img">
+                    <img src="/img/imagen1.jpeg" alt="imagen1">
+                    <img src="/img/imagen2.jpeg" alt="imagen2">
+                </div>
+            </div>
+    </section>     
+
+    </main>
+
+    <footer class="inicio-footer">
+        <div class="caja-footer">
+            <p class="p-footer">&copy; 2026 I M Osasun. Todos los derechos reservados. </p>
+            <a href="../funcionamiento/funcionamiento.html">Funcionamiento</a>
+            <a href="../icontacto/icontacto.html">Contacto</a>
+        </div>
+
+    </footer>
+    
+    <script src="/js/fechadia.js"></script>
+    <script src="/js/login.js"></script>
+
+</body>
+</html>
