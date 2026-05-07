@@ -9,13 +9,16 @@ let estadoImagen = 1;
 
 
 const cambiar = () => {
+
   if (estadoImagen === 1) {
     imagen.src = img2;
     estadoImagen = 2;
-  } else if (estadoImagen === 2) {
+  }
+  else if (estadoImagen === 2) {
     imagen.src = img3;
     estadoImagen = 3;
-  } else {
+  }
+  else {
     imagen.src = img1;
     estadoImagen = 1;
   }

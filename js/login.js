@@ -23,7 +23,8 @@ formularioLogin.addEventListener('submit', function (evento) {
   if (correo === usuarioEjemplo.correo && pass === usuarioEjemplo.pass) {
     alert('¡Iniciaste sesión con éxito!');
     window.location.href = 'informacion.html';
-  } else {
+  } 
+  else {
     alert('Usuario o contraseña incorrectos. PONER juan@juan.es / 1234567');
   }
 
