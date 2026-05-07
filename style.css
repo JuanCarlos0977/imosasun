@@ -98,6 +98,39 @@ footer div a {
     text-align: center;
 }
 
+.inicio_img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.inicio_img img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#btnCambiar {
+    padding: 14px 28px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 999px;
+    background-color: #1b7a69;
+    color: #b3e586;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.2s ease;
+}
+
+#btnCambiar:hover {
+    background-color: #ffffff;
+    color: #116455;
+    transform: translateY(-2px);
+}
+
 
 @media (max-width: 750px) {
     div {

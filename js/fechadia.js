@@ -1,11 +1,8 @@
-/* Obtener los datos de fecha */
-const fechadia = new Date();
+const fechaDia = new Date();
 meses = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
-dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+dias = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"]
 
-/*formatea una cadena*/
-const dia = fechadia.getDate() + " " + meses[fechadia.getMonth()] + " " + fechadia.getFullYear();
-const diasemana = fechadia.getHours() + ":" + fechadia.getMinutes();
+const dia = fechaDia.getDate() + " de " + meses[fechaDia.getMonth()] + " de " + fechaDia.getFullYear();
+const diaSemana = dias[fechaDia.getDay()];
 
-/* muestra la fecha */
-document.getElementById("fechadia").innerHTML = "<p>" + dia + ", " + diasemana + "</p>";
+document.getElementById("fechaDia").innerHTML = "<p>" + diaSemana + ", " + dia + "</p>";
